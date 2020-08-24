@@ -1,0 +1,6 @@
+echo "Publishing images now."
+git pull
+git add .
+git commit -m "no comment"
+git push --force
+echo "You can give an image on the browser at https://kdemarest.github.io/jenemail/IMAGE_NAME.png"
