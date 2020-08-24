@@ -22,8 +22,10 @@ async function main() {
 		});
 	}
 
-	async function run(cmd,showErrors=true) {
-		console.log(cmd);
+	async function run(cmd,showCmd=false,showErrors=true) {
+		if( showCmd) {
+			console.log(cmd);
+		}
 		let result = await execShellCommand( cmd );
 		log( cmd );
 		log( JSON.stringify(result) );
@@ -57,10 +59,10 @@ async function main() {
 	else {
 		await run('git commit -m "updating '+imageCount+' images"');
 		await run('git push --force');
+		console.log( 'Published '+imageCount+' images.' );
 	}
 
-	console.log( 'Published.' );
-	console.log( 'You can view an image on the browser at:\nhttps://kdemarest.github.io/jenemail/IMAGE_NAME.png' );
+//	console.log( 'You can view an image on the browser at:\nhttps://kdemarest.github.io/jenemail/IMAGE_NAME.png' );
 }
 
 main();

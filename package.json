@@ -1,0 +1,19 @@
+{
+  "name": "jenemail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "push.js",
+  "scripts": {
+    "start": "node push.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdemarest/jenemail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdemarest/jenemail/issues"
+  },
+  "homepage": "https://github.com/kdemarest/jenemail#readme"
+}
